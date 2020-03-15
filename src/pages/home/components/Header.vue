@@ -1,8 +1,10 @@
 <template>
     <div class="header">
-        <div class="header-left">返回</div>
-        <div class="header-input">内容</div>
-        <div class="header-right">城市</div>
+        <div class="header-left">
+            <div class="iconfont icon-fanhui back-icon"></div>
+        </div>
+        <div class="header-input"><span class="iconfont icon-sousuo"></span>内容</div>
+        <div class="header-right">城市<span class="iconfont icon-jiantou arrow-right"></span></div>
     </div>
 </template>
 
@@ -16,25 +18,40 @@
     @import "../../../assets/styles/varibles.styl"
     .header
         display flex
-        line-height .86rem
-        background  $bgColor
+        line-height $headerHeight
+        background $bgColor
         color #fff
+
         .header-left
-            width .64rem
-            float left
+            margin-left: 0.1rem
+            float: left
+            width: .64rem
 
         .header-input
-            flex 1
-            background #fff
-            height .64rem
-            line-height .64rem
-            margin-top .24rem
-            margin-left .2rem
+            padding-left: .2rem
+            flex: 1
+            height: .64rem
+            line-height: .64rem
+            margin-top: .12rem
+            margin-left: .2rem
+            padding-left: .2rem
+            color: #ccc
+            background: #fff
+            border-radius: .1rem
+
+            .back-icon
+                text-align center
+                font-size .4rem
 
         .header-right
-            width .64rem
-            float right
-            text-align center
+            min-width: 1.04rem
+            padding: 0 .1rem
+            float: right
+            text-align: center
+            color: #ffffff
 
-
+            .arrow-right
+                font-size .3rem
+                margin-left -.05rem
+                padding 0 .1rem
 </style>
