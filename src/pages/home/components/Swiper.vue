@@ -2,7 +2,7 @@
     <div class="wraper">
         <swiper :options="swiperOption">
             <swiper-slide v-for="item of swiperList">
-                <img class="swiper-img" :src="item" :key="index">
+                <img class="swiper-img" :src="item">
             </swiper-slide>
             <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
