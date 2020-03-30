@@ -4,7 +4,9 @@
             <div class="iconfont icon-fanhui back-icon"></div>
         </div>
         <div class="header-input"><span class="iconfont icon-sousuo"></span>内容</div>
-        <div class="header-right">{{city}}<span class="iconfont icon-jiantou arrow-right"></span></div>
+        <router-link to="/city">
+            <div class="header-right">{{city}}<span class="iconfont icon-jiantou arrow-right"></span></div>
+        </router-link>
     </div>
 </template>
 
