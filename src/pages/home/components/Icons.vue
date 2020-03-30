@@ -113,6 +113,6 @@
             line-height .44rem
             text-align center
             color $darkTextColor
-            ellipse()
+            ellipsis()
 
 </style>
