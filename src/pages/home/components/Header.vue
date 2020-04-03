@@ -1,21 +1,18 @@
 <template>
     <div class="header">
         <div class="header-left">
-            <div class="iconfont icon-fanhui back-icon"></div>
+            <div class="iconfont icon-fanhui back-icon">&#xe646;</div>
         </div>
-        <div class="header-input"><span class="iconfont icon-sousuo"></span>内容</div>
+        <div class="header-input"><span class="iconfont icon-sousuo">&#xe987;</span>内容</div>
         <router-link to="/city">
-            <div class="header-right">{{city}}<span class="iconfont icon-jiantou arrow-right"></span></div>
+            <div class="header-right">{{this.$store.state.city}}<span class="iconfont icon-jiantou arrow-right">&#xe642;</span></div>
         </router-link>
     </div>
 </template>
 
 <script>
     export default {
-        name: "HomeHeader",
-        props: {
-            city: String
-        }
+        name: "HomeHeader"
     }
 </script>
 
