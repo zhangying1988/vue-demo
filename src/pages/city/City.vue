@@ -36,11 +36,11 @@
             }
         },
         methods: {
-            getCityList() {
-                axios.get('/mock/city.json')
-                    .then(this.getCityListSucc)
+            getCityInfo() {
+                axios.get('/api/city.json')
+                    .then(this.handleGetCityInfoSucc)
             },
-            getCityListSucc(res) {
+            handleGetCityInfoSucc(res) {
                 res = res.data
                 if (res.ret && res.data) {
                     const data = res.data
@@ -53,7 +53,7 @@
             }
         },
         mounted() {
-            this.getCityList()
+            this.getCityInfo()
         }
     }
 

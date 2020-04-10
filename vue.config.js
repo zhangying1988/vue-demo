@@ -1,7 +1,7 @@
 module.exports = {
     /* 部署生产环境和开发环境下的URL：可对当前环境进行区分，baseUrl 从 Vue CLI 3.3 起已弃用，要使用publicPath */
     /* baseUrl: process.env.NODE_ENV === 'production' ? './' : '/' */
-    publicPath: process.env.NODE_ENV === 'production' ? '/public/' : './',
+    publicPath: process.env.NODE_ENV === 'production' ? './' : './',
     /* 输出文件目录：在npm run build时，生成文件的目录名称 */
     outputDir: 'dist',
     /* 放置生成的静态资源 (js、css、img、fonts) 的 (相对于 outputDir 的) 目录 */
@@ -24,12 +24,13 @@ module.exports = {
         /* 使用代理 */
         proxy: {
             '/api': {
-                target: 'http://localhost:8080',   //代理接口
+                target: 'http://221.228.101.101:9393',   //代理接口
                 // target:'http://localhost:80', /* 目标代理服务器地址 */
                 /* 允许跨域 */
                 changeOrigin: true,
                 pathRewrite: {
                     '^/api': '/mock',  //代理的路径
+                    // '^/api': '/',  //代理的路径
                     // '^/api': '/api'    //后台服务器上面
                 }
             },

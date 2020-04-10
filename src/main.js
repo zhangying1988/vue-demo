@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router/router'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'babel-polyfill'
 import store from './store'
 import fastclick from 'fastclick'//300毫秒延迟点击问题’
 import './assets/styles/reset.css' //引入全局样式
